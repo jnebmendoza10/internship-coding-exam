@@ -9,10 +9,10 @@ namespace YouSource.SortTests
         [TestMethod]
         public void MergeSortTest()
         {
-            BubbleSortStrategy bubbleSort = new BubbleSortStrategy();
+            MergeSortStrategy mergeSort = new MergeSortStrategy();
             string mockInput = "bernard";
 
-            string actualResult = bubbleSort.sort(mockInput);
+            string actualResult = mergeSort.sort(mockInput);
 
             string expectedResult = "abdenrr";
             Assert.AreEqual(expectedResult, actualResult);

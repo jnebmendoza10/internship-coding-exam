@@ -9,10 +9,10 @@ namespace YouSource.SortTests
         [TestMethod]
         public void QuickSortTest()
         {
-            BubbleSortStrategy bubbleSort = new BubbleSortStrategy();
+            QuickSortStrategy quickSort = new QuickSortStrategy();
             string mockInput = "bernard";
 
-            string actualResult = bubbleSort.sort(mockInput);
+            string actualResult = quickSort.sort(mockInput);
 
             string expectedResult = "abdenrr";
             Assert.AreEqual(expectedResult, actualResult);
